@@ -1,0 +1,120 @@
+@media (max-width: 1040px) {
+  .top__inner-img {
+    margin-left: 0;
+  }
+}
+@media (max-width: 940px) {
+  .top__inner-form {
+    position: absolute;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .top__inner-suptitle,
+  .top__inner-title,
+  .top__inner-text {
+    width: 280px;
+    margin-right: 110px;
+  }
+  .top__inner-suptitle {
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+  .top__inner-title {
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .top__inner-text {
+    font-size: 16px;
+    margin-bottom: 60px;
+  }
+  .top-form {
+    width: 100%;
+  }
+  .top-form__inner {
+    padding: 48px 50px 111px 50px;
+  }
+  @media (max-width: 768px) {
+    .header__text {
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 760px) {
+    .top__inner-img img {
+      width: 200px;
+    }
+  }
+  @media (max-width: 700px) {
+    .header__text {
+      display: none;
+    }
+  }
+}
+@media (max-width: 640px) {
+  .top__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .top__inner-form {
+    position: static;
+    align-items: center;
+    text-align: center;
+  }
+  .top__inner-suptitle,
+  .top__inner-title,
+  .top__inner-text {
+    width: 100%;
+    margin-right: 0px;
+  }
+  .top__inner-img img {
+    width: 150px;
+  }
+  .mobile__link-btn {
+    display: block;
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background-color: #7eb252;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+  }
+  .top-form,
+  .top__inner-text {
+    display: none;
+  }
+  .top__inner-img {
+    order: 1;
+  }
+  .top__inner-img img {
+    width: 85px;
+  }
+}
+@media (max-width: 600px) {
+  .top__wrapper {
+    margin-top: -510px;
+  }
+  .top__inner-img img {
+    width: 85px;
+  }
+}
+@media (max-width: 480px) {
+  .header__text,
+  .header__phone-text,
+  .header__phone a:before {
+    display: none;
+  }
+  .header__phone a {
+    font-size: 14px;
+  }
+  .header__logo img {
+    max-width: 110px;
+    max-height: 16px;
+  }
+}
