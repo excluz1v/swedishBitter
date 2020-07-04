@@ -539,6 +539,9 @@ section {
   top: 50%;
   transform: translateY(-50%);
 }
+.mobile__bg {
+  display: none;
+}
 .history {
   margin-bottom: 0;
 }
@@ -611,30 +614,11 @@ section {
   background-position: center left;
 }
 .quote__wrapper {
-  /* position: relative; */
   padding: 200px 0 100px;
   background-repeat: no-repeat;
   background-image: url("../images/quote-right.jpg");
   background-position: center right;
 }
-/* .quote__fon::after,
-.quote__fon::before {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 50%;
-  background-repeat: no-repeat;
-  background-image: url("../images/quote.jpg");
-  top: 0;
-  opacity: 0.5;
-}
-.quote__fon::before {
-  right: 100%;
-}
-.quote__fon::after {
-  left: 100%;
-  transform: rotateY(180deg);
-} */
 .quote__inner {
   font-size: 24px;
   line-height: 40px;
@@ -740,10 +724,11 @@ section {
   transform: rotate(-90deg) translateX(-50%);
 }
 .composition__item-name {
-  left: 50%;
+  left: 90%;
   bottom: 0;
-  transform: rotate(-90deg) translateX(50%) translateY(50%);
+  transform: rotate(-90deg) translateX(0%);
   white-space: nowrap;
+  transform-origin: 0px 0px 1px;
 }
 .composition__item-effect {
   opacity: 0;
@@ -836,7 +821,7 @@ section {
   position: absolute;
   bottom: 0;
   right: 0;
-  padding: 25px 100px 25px 66px;
+  padding: 25px 100px 25px 70px;
 }
 .composition__link-btn::after {
   right: 50px;
@@ -1100,8 +1085,13 @@ section {
 }
 .footer__link {
   font-size: 12px;
-  line-height: 230px;
   font-weight: 400;
   text-decoration: underline;
   color: #9a9a9a;
+}
+.footer__inner-links {
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+  max-width: 700px;
 }
